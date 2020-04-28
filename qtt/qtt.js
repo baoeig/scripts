@@ -35,7 +35,7 @@ const signinfo = { playList: [], luckyList: [], rainList: [] }
       await getcoininfo()
       await getreadReward()
     }
-    if (new Date().getHours() == 20 || new Date().getHours() >= 12) {
+    if (new Date().getHours() == 20 || new Date().getHours() == 12) {
       await sleepStatus()
       await sleepReward()
       await sleep()
